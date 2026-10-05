@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovelNest — Read & Publish Novels</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                <span>NovelNest</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#discover">Discover</a>
+                <a href="#categories">Categories</a>
+                <a href="#authors">Authors</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="search-btn" id="searchBtn">
+                    🔍
+                </button>
+
+                <button class="publish-btn" id="openPublishBtn">
+                    + Publish Novel
+                </button>
+
+                <button class="profile-btn" id="profileBtn">
+                    👤
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH BAR ================= -->
+
+    <div class="search-panel" id="searchPanel">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search novels, authors or genres..."
+                >
+
+                <button id="closeSearch">
+                    ✕
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        ✦ A HOME FOR EVERY STORY
+                    </span>
+
+                    <h1>
+                        Stories that
+                        <span>stay with you.</span>
+                    </h1>
+
+                    <p>
+                        Discover captivating novels written by independent
+                        authors from around the world — or share your own story
+                        with readers everywhere.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#discover" class="primary-btn">
+                            Start Reading →
+                        </a>
+
+                        <button class="secondary-btn" id="heroPublishBtn">
+                            Write & Publish
+                        </button>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>12K+</strong>
+                            <span>Novels</span>
+                        </div>
+
+                        <div>
+                            <strong>8K+</strong>
+                            <span>Authors</span>
+                        </div>
+
+                        <div>
+                            <strong>50K+</strong>
+                            <span>Readers</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Featured Book -->
+
+                <div class="hero-book-area">
+
+                    <div class="book-glow"></div>
+
+                    <div class="featured-book">
+
+                        <div class="book-cover">
+
+                            <div class="book-cover-content">
+
+                                <span class="book-small">
+                                    A NOVEL
+                                </span>
+
+                                <h2>
+                                    Whispers<br>
+                                    of the<br>
+                                    Moon
+                                </h2>
+
+                                <div class="book-line"></div>
+
+                                <span class="book-author">
+                                    Sofia Laurent
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card">
+
+                        <span class="mini-cover">📖</span>
+
+                        <div>
+                            <strong>Whispers of the Moon</strong>
+                            <small>Trending this week</small>
+                        </div>
+
+                        <span class="rating">★ 4.9</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRENDING ================= -->
+
+        <section class="section" id="discover">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            TRENDING NOW
+                        </span>
+
+                        <h2>
+                            Stories readers love
+                        </h2>
+                    </div>
+
+                    <button class="view-all">
+                        View all →
+                    </button>
+
+                </div>
+
+
+                <div class="book-grid" id="bookGrid">
+
+                    <!-- Book 1 -->
+
+                    <article class="book-card" data-title="The Last Summer" data-author="Emma Rose">
+
+                        <div class="book-cover-card cover-one">
+
+                            <span>ROMANCE</span>
+
+                            <h3>
+                                The<br>
+                                Last<br>
+                                Summer
+                            </h3>
+
+                            <small>
+                                Emma Rose
+                            </small>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <div>
+                                <h3>The Last Summer</h3>
+                                <p>Emma Rose</p>
+                            </div>
+
+                            <span class="rating">
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Book 2 -->
+
+                    <article class="book-card" data-title="Echoes of Tomorrow" data-author="Daniel Hart">
+
+                        <div class="book-cover-card cover-two">
+
+                            <span>SCI-FI</span>
+
+                            <h3>
+                                Echoes<br>
+                                of<br>
+                                Tomorrow
+                            </h3>
+
+                            <small>
+                                Daniel Hart
+                            </small>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <div>
+                                <h3>Echoes of Tomorrow</h3>
+                                <p>Daniel Hart</p>
+                            </div>
+
+                            <span class="rating">
+                                ★ 4.7
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Book 3 -->
+
+                    <article class="book-card" data-title="The Silent Garden" data-author="Maya Wilson">
+
+                        <div class="book-cover-card cover-three">
+
+                            <span>MYSTERY</span>
+
+                            <h3>
+                                The<br>
+                                Silent<br>
+                                Garden
+                            </h3>
+
+                            <small>
+                                Maya Wilson
+                            </small>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <div>
+                                <h3>The Silent Garden</h3>
+                                <p>Maya Wilson</p>
+                            </div>
+
+                            <span class="rating">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Book 4 -->
+
+                    <article class="book-card" data-title="Beneath the Stars" data-author="Lena Brooks">
+
+                        <div class="book-cover-card cover-four">
+
+                            <span>FANTASY</span>
+
+                            <h3>
+                                Beneath<br>
+                                the<br>
+                                Stars
+                            </h3>
+
+                            <small>
+                                Lena Brooks
+                            </small>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <div>
+                                <h3>Beneath the Stars</h3>
+                                <p>Lena Brooks</p>
+                            </div>
+
+                            <span class="rating">
+                                ★ 4.6
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories-section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            EXPLORE
+                        </span>
+
+                        <h2>
+                            Find your next world
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <button class="category-card">
+                        <span class="category-icon">♡</span>
+                        <strong>Romance</strong>
+                        <small>2,840 novels</small>
+                    </button>
+
+                    <button class="category-card">
+                        <span class="category-icon">✦</span>
+                        <strong>Fantasy</strong>
+                        <small>1,920 novels</small>
+                    </button>
+
+                    <button class="category-card">
+                        <span class="category-icon">◈</span>
+                        <strong>Mystery</strong>
+                        <small>1,480 novels</small>
+                    </button>
+
+                    <button class="category-card">
+                        <span class="category-icon">◇</span>
+                        <strong>Science Fiction</strong>
+                        <small>1,120 novels</small>
+                    </button>
+
+                    <button class="category-card">
+                        <span class="category-icon">☾</span>
+                        <strong>Thriller</strong>
+                        <small>980 novels</small>
+                    </button>
+
+                    <button class="category-card">
+                        <span class="category-icon">✎</span>
+                        <strong>Drama</strong>
+                        <small>870 novels</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AUTHOR CTA ================= -->
+
+        <section class="author-section" id="authors">
+
+            <div class="container">
+
+                <div class="author-box">
+
+                    <div class="author-content">
+
+                        <span class="section-label">
+                            FOR WRITERS
+                        </span>
+
+                        <h2>
+                            Your story deserves<br>
+                            to be read.
+                        </h2>
+
+                        <p>
+                            Publish your novel, build your audience,
+                            and connect with readers who love your kind
+                            of stories.
+                        </p>
+
+                        <button
+                            class="primary-btn"
+                            id="authorPublishBtn"
+                        >
+                            Publish Your Novel →
+                        </button>
+
+                    </div>
+
+                    <div class="author-decoration">
+                        ✒
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= READER ================= -->
+
+        <section class="reader-section">
+
+            <div class="container reader-container">
+
+                <div>
+
+                    <span class="section-label">
+                        READING EXPERIENCE
+                    </span>
+
+                    <h2>
+                        Read your way.
+                    </h2>
+
+                    <p>
+                        Save your favorite stories, continue where you left
+                        off, and create your own personal reading library.
+                    </p>
+
+                </div>
+
+                <div class="reader-features">
+
+                    <div class="feature">
+                        <span>🔖</span>
+                        <strong>Save Stories</strong>
+                        <small>Keep novels for later.</small>
+                    </div>
+
+                    <div class="feature">
+                        <span>📚</span>
+                        <strong>Your Library</strong>
+                        <small>All your favorites in one place.</small>
+                    </div>
+
+                    <div class="feature">
+                        <span>☀</span>
+                        <strong>Easy Reading</strong>
+                        <small>Comfortable reading experience.</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PUBLISH MODAL ================= -->
+
+    <div class="modal-overlay" id="publishModal">
+
+        <div class="publish-modal">
+
+            <button class="modal-close" id="closePublish">
+                ✕
+            </button>
+
+            <div class="modal-header">
+
+                <span class="section-label">
+                    NEW STORY
+                </span>
+
+                <h2>
+                    Publish your novel
+                </h2>
+
+                <p>
+                    Share your story with readers around the world.
+                </p>
+
+            </div>
+
+
+            <form id="publishForm">
+
+                <div class="form-group">
+
+                    <label for="novelTitle">
+                        Novel Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="novelTitle"
+                        placeholder="Enter your novel title"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="authorName">
+                            Author Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="authorName"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="novelGenre">
+                            Genre
+                        </label>
+
+                        <select id="novelGenre" required>
+
+                            <option value="">
+                                Select genre
+                            </option>
+
+                            <option value="Romance">
+                                Romance
+                            </option>
+
+                            <option value="Fantasy">
+                                Fantasy
+                            </option>
+
+                            <option value="Mystery">
+                                Mystery
+                            </option>
+
+                            <option value="Science Fiction">
+                                Science Fiction
+                            </option>
+
+                            <option value="Thriller">
+                                Thriller
+                            </option>
+
+                            <option value="Drama">
+                                Drama
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="novelDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="novelDescription"
+                        rows="4"
+                        placeholder="Tell readers about your story..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="novelContent">
+                        First Chapter
+                    </label>
+
+                    <textarea
+                        id="novelContent"
+                        rows="8"
+                        placeholder="Start writing your story here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        id="cancelPublish"
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Publish Novel →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= READING MODAL ================= -->
+
+    <div class="modal-overlay" id="readingModal">
+
+        <div class="reading-modal">
+
+            <button class="modal-close" id="closeReading">
+                ✕
+            </button>
+
+            <div class="reading-header">
+
+                <span id="readingGenre">
+                    ROMANCE
+                </span>
+
+                <h2 id="readingTitle">
+                    The Last Summer
+                </h2>
+
+                <p>
+                    By <strong id="readingAuthor">Emma Rose</strong>
+                </p>
+
+            </div>
+
+
+            <div class="reading-content">
+
+                <div class="chapter-title">
+                    Chapter One
+                </div>
+
+                <div id="readingText">
+
+                    <p>
+                        The sun was slowly disappearing behind the horizon,
+                        painting the sky in shades of orange and gold.
+                    </p>
+
+                    <p>
+                        Emma stood by the old wooden window, watching the
+                        waves crash against the shore. She had always loved
+                        this place, but tonight everything felt different.
+                    </p>
+
+                    <p>
+                        Perhaps it was because she knew this would be
+                        her last summer here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reading-footer">
+
+                <button class="reading-action">
+                    🔖 Save
+                </button>
+
+                <button class="reading-action">
+                    ♡ Like
+                </button>
+
+                <button class="next-chapter">
+                    Next Chapter →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="logo-icon">N</span>
+                    <span>NovelNest</span>
+                </div>
+
+                <p>
+                    A place where stories find their readers.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="#discover">Popular</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#authors">Authors</a>
+                </div>
+
+                <div>
+                    <h4>Community</h4>
+                    <a href="#">Guidelines</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div>
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+                © 2026 NovelNest. All rights reserved.
+            </p>
+
+            <p>
+                Made for readers & writers.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
